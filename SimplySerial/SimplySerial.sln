@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplySerial", "SimplySerial.csproj", "{3C7DB929-519C-44A3-A68F-2646CC595CAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplySerial", "SimplySerial.csproj", "{3C7DB929-519C-44A3-A68F-2646CC595CAE}"
 EndProject
 Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "Installer", "..\Installer\Installer.aiproj", "{DCC10C6B-B172-4172-9961-E6D643DF6BCF}"
 	ProjectSection(ProjectDependencies) = postProject
