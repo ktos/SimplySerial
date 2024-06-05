@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Ports;
@@ -7,6 +6,7 @@ using System.Linq;
 using System.Management;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading;
 
@@ -922,7 +922,7 @@ namespace SimplySerial
                 using (StreamReader r = new StreamReader($"{appFolder}\\boards.json"))
                 {
                     string json = r.ReadToEnd();
-                    boardData = JsonConvert.DeserializeObject<BoardData>(json);
+                    boardData = JsonSerializer.Deserialize<BoardData>(json);
                 }
             }
             catch (Exception e)
